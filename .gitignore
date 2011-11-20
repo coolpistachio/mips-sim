@@ -2,3 +2,9 @@ bin/
 .metadata
 .settings
 .classpath
+.project
+
+
+.idea
+Mips-sim.iml
+out/

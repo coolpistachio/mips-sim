@@ -1,25 +1,15 @@
 package graphix;
 
-import exceptions.BinaryLengthException;
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.SwingUtilities;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Highlighter;
-
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import exceptions.BinaryLengthException;
 import processor.ControlUnit;
 import processor.Processor;
 import simulator.Parser;
@@ -54,7 +44,7 @@ public class Arquitectura extends javax.swing.JFrame {
 
 	private static final long serialVersionUID = -8186786303013549434L;
 	private final Panel Fondo = new Panel();
-	private static String VERSION = "2.0.0";
+	private static String VERSION = "0.1";
 	public String Id[][];
 	private JButton Next;
 	private JButton Restart;

@@ -1,12 +1,10 @@
 package processor;
 
+import java.util.HashMap;
 import generic.GenericMux;
 import generic.GenericShiftUnit;
 import generic.Logic;
 import instructions.Instruction;
-
-import java.util.HashMap;
-
 import stages.Stage_EX_MEM;
 import stages.Stage_ID_EX;
 import stages.Stage_IF_ID;
@@ -293,10 +291,11 @@ public class Processor {
 				
 			}
 			
-			if(validPC())
+			if(validPC()) {
 				setInstruction((Instruction) getInstMemory().get(pc.getPC()));
-			else
+			} else {
 				setInstruction(new Instruction());
+			}
 			
 			//////////////////////////////////////////////////////////////////////
 			{

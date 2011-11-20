@@ -27,7 +27,7 @@ public class Simulator {
 	}
 
 	public void setStarted(boolean b) {
-		this.started = true;
+		this.started = b;
 	}
 	
 	public boolean getStarted(){
